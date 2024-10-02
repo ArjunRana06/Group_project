@@ -1,0 +1,89 @@
+::root{
+    --primary: #21a6ef;
+}
+
+
+body{
+    background-color: #ffffff;
+}
+
+.top_css{
+    font-size: 40px;
+    font-weight: bold;
+    color: #21a6ef;
+}
+
+.top_p_text{
+    color: #332f2a;
+}
+
+.find_the_right_css{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 30px 50px 30px;
+    margin-top: 20px;
+    background-color: #f1f8fc;
+    border-radius: 10px;
+    width: 96%;
+
+}
+
+.find_the_right_css .text1{
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.search-input {
+    width: 80%;
+    margin: 0 auto; 
+    border: 2px solid #0b181f;
+    border-radius: 5px;
+}
+
+.search-input:hover{
+    border: 2px solid #21a6ef;
+}
+.search-input .input-group-text {
+    padding: 18px;
+    background-color: white;
+    border: none;
+    border-right: 2px solid transparent; 
+}
+
+.search-input .form-control {
+    border: none; 
+    box-shadow: none;
+}
+.search-input .input-group {
+    border: 2px solid #ccc;
+}
+
+
+.body_css{
+    margin: 0px 80% 0px 8%;
+    gap: 3%;
+}
+
+.left_body{
+    border: 2px solid #131515;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* collapse */
+.collapse-header {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.collapse-header i {
+    transition: transform 0.3s ease;
+}
+.collapse-header.collapsed i {
+    transform: rotate(90deg);
+    
+}
