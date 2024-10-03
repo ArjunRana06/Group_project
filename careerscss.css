@@ -61,14 +61,25 @@ body{
 
 
 .body_css{
-    margin: 0px 80% 0px 8%;
+    margin: 0% 0% 0px 6%;
     gap: 3%;
 }
 
 .left_body{
-    border: 2px solid #131515;
+    border: 1px solid #d2d2d2;
     border-radius: 10px;
     padding: 20px;
+    height: 100%;
+}
+
+.text2_css{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.text_collapse div{
+    line-height: 30px;
+    font-size: 20px;
 }
 
 /* collapse */
@@ -86,4 +97,25 @@ body{
 .collapse-header.collapsed i {
     transform: rotate(90deg);
     
+}
+
+.right_body_one{
+    border: 1px solid #d2d2d2;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.fs-bold{
+    font-weight: bold;
+}
+
+.edit_text h5{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.edit_text p{
+    font-size: 15px;
 }
