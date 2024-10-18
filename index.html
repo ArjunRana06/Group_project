@@ -1,14 +1,796 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New group project</title>
+    <title>Invest4edu | Your smart move</title>
+    <link rel="icon" href="images/icon.png">
+
+    <!-- Boostrap CDN links -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> -->
+
+    <!-- Fontawesome icons link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+    <!-- Boostrap icons link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- External css -->
+    <link rel="stylesheet" href="boot/bootstrap.css">
+    <link rel="stylesheet" href="boot/bootstrap.js">
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav_footer.css">
+
 </head>
+
 <body>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, quis.
-    </p>
-    <h5>Hello heading five</h5>
+    <!-- The body where all the content lies -->
+    <div class="_nav fixed-top">
+        <!-- First nav -->
+        <div class="container-fluid _first_nav">
+            <div class="container _top">
+                <div class="_top_left">
+                    <div>
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+91 85918 58565</span>
+                    </div>
+
+                    <div>
+                        <i class="bi bi-envelope"></i>
+                        <span>info@invest4edu.com</span>
+                    </div>
+                </div>
+
+
+                <div class="_top_right">
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Press Release</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Nav -->
+        <nav class="navbar navbar-expand-lg py-1 bg-light navbar-light bg-light _second_nav">
+            <div class="container-fluid mx-5 px-4">
+                <!-- Logo on the left -->
+                <a class="navbar-brand" href="#">
+                    <img src="images/clogo.png" class=" _logo" alt="Logo">
+                </a>
+
+                <!-- Menu Button on the right -->
+                <button class="navbar-toggler ms-auto _menu_btn" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <!-- Empty Left Side to push content to the right -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!-- Left-side content can go here if needed -->
+                    </ul>
+
+                    <!-- Right-side Navigation Links -->
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown" href="#" id="navbarDropdown1" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Educational Services <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                <li><a class="dropdown-item" href="#">Education Journey</a></li>
+                                <li><a class="dropdown-item" href="#">Study Abroad</a></li>
+                                <li><a class="dropdown-item" href="#">Career Counseling</a></li>
+                                <li><a class="dropdown-item" href="#">Psychometirc Test</a></li>
+                                <li><a class="dropdown-item" href="#">Boot Camp</a></li>
+                                <li><a class="dropdown-item" href="#">Career Library</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown" href="#" id="navbarDropdown2" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Financial Services <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                <li><a class="dropdown-item" href="#">Investment Plans</a></li>
+                                <li><a class="dropdown-item" href="#">Cost Calculator</a></li>
+                                <li><a class="dropdown-item" href="#">Education Loan</a></li>
+                                <li><a class="dropdown-item" href="#">Mutual Funds</a></li>
+                                <li><a class="dropdown-item" href="#">Fixed Deposit</a></li>
+                                <li><a class="dropdown-item" href="#">Protections</a></li>
+                                <li><a class="dropdown-item" href="#">Calculators</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown" href="#" id="navbarDropdown2" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Resources <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                <li><a class="dropdown-item" href="#">Blogs</a></li>
+                                <li><a class="dropdown-item" href="#">Reports</a></li>
+                                <li><a class="dropdown-item" href="#">Our Team</a></li>
+                                <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                                <li><a class="dropdown-item" href="#">Press Release</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Skill Building</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">InvestKul</a>
+                        </li>
+                    </ul>
+
+                    <!-- Right-side Buttons -->
+                    <div class="d-flex ms-3 _btn">
+                        <button class="btn btn-primary me-auto px-4 _login_btn">Login</button>
+                        <button class="btn mx-1 _partner_btn">Partner Login <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+    <!-- The main body -->
+    <div class="_main">
+        <!-- The hero or hero girl section -->
+        <div class="container-fluid _m_main">
+            <div class="container mx-5 mt-4 d-flex justify-content-between row">
+                <div class="py-5 px-5 _first_main col-lg-6 col-md-6 col-sm-12">
+                    <div>
+                        <div class="_bot mb-3">
+                            <img class="p-1" src="images/bot.png" alt="">
+                            <span>AI Powered</span>
+                        </div>
+                        <div>
+                            <h3 class=" _education">
+                                Education Planning Made Easy
+                            </h3>
+                            <p class="_need">Need help with education planning? Let's create a personalized roadmap for
+                                your child's success.
+                            </p>
+                            <button class="btn btn-primary px-4 text-center text-light" href="">Create Education
+                                Journey</button><br>
+                            <div class="_student my-3">
+                                <img src="images/student.png" alt="">
+                                <span class="fw-bold fs-5">50K+</span>
+                            </div>
+                            <p class="_need">Students Registered till now</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="_second_main col-lg-6 col-md-6 col-sm-12">
+                    <div class="col-12">
+                        <div class="_contain">
+                            <div class="_absolute">
+                                <div id="_hero_btn1">
+                                    <a class="btn">
+                                        <img src="images/skill.png" alt="">
+                                        Skill building
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </a>
+                                </div>
+                                <div id="_hero_btn2">
+                                    <a class="btn">
+                                        <img src="images/career.png" alt="">
+                                        Career<br>Counseling
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </a>
+                                </div>
+                                <div id="_hero_btn3">
+                                    <a class="btn">
+                                        <img src="images/psycho.png" alt="">
+                                        Psychometric test
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </a>
+                                </div>
+                                <div id="_hero_btn4">
+                                    <a class="btn">
+                                        <img src="images/scholorship.png" alt="">
+                                        Scholarships
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </a>
+                                </div>
+                                <div id="_hero_btn5">
+                                    <a class="btn">
+                                        <img src="images/edu.png" alt="">
+                                        Edu Abacus
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </a>
+                                </div>
+                                <div id="_hero_btn6">
+                                    <a class="btn">
+                                        <img src="images/study.png" alt="">
+                                        Study Abroad
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- The age or second section -->
+        <div class=" container-fluid _age_section py-5">
+            <div class="container d-flex px-4">
+                <img class="_boy" src="image-boy/Age3.75495c57.svg" alt="">
+                <img class="_progress" src="image-boy/progress-removebg-preview.png" alt="">
+                <img class="_boy" src="image-boy/Age8.c879d747.svg" alt="">
+                <img class="_progress" src="image-boy/progress-removebg-preview.png" alt="">
+                <img class="_boy" src="image-boy/Age11.751f322c.svg" alt="">
+                <img class="_progress" src="image-boy/progress-removebg-preview.png" alt="">
+                <img class="_boy" src="image-boy/Age14.35744bc9.svg" alt="">
+                <img class="_progress" src="image-boy/progress-removebg-preview.png" alt="">
+                <img class="_boy" src="image-boy/Age22.eb3b0208.svg" alt="">
+            </div>
+            <div class="_start_btn">
+                <h3>Empower Your Child's Education with invest4Edu</h3>
+                <p>Seamless Education Journey with invest4Edu</p>
+                <button type="button" class="btn btn-primary">Start Now</button>
+            </div>
+        </div>
+
+        <!-- The third section or Family section -->
+        <div class="_fammily">
+            <div class="container-fluid px-5">
+                <div class="px-5 mx-3 row">
+                    <div class="col-lg-6 col-sm-12">
+                        <div>
+                            <img class="_fimage" src="images/family.png" alt="">
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <div>
+                                <button class="btn btn-light text-dark">
+                                    <img src="images/magnify.svg" alt="">Portfolio Analyzer
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <button class="btn btn-light text-dark">
+                                    <img src="images/security.svg" alt="">Goal Protection Plan
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <button class="btn btn-light text-dark">
+                                    <img src="images/piggy-bank.svg" alt="">Education Saving
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <button class="btn btn-light text-dark">
+                                    <img src="images/coin.svg" alt=""> Invest For Kids
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <button class="btn btn-light text-dark">
+                                    <img src="images/money.svg" alt=""> Financial Planing Guidance
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <button class="btn btn-light text-dark">
+                                    <img src="images/calc.svg" alt="">
+                                    Future Cost Of Education
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 _family_right text-center">
+                        <div class="">
+                            <h4>Nurturing Dreams,
+                                One Step At A Time!</h4>
+                            <p>Invest in your child's successful future and secure their dreams today.</p>
+                            <button type="submit" class="btn btn-primary">Get an Estimate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Financial Section -->
+        <div class="_financial py-4">
+            <div class="container-fluid px-5">
+                <div class=".container mx-5 px-4 row _finance">
+                    <div class="col-lg-6 col-sm-12">
+                        <h4 class="_services">Financial <span style="color: #032b5b;">Services</span></h4>
+                        <p style="font-size: 15px;">Personalised solutions to smartly secure in your child's educational
+                            needs, guiding them on their journey to academic excellence.</p>
+                    </div>
+                    <div class="row px-1 my-2">
+                        <div class="container-fluid container-custom">
+                            <div class="container">
+                                <div class="row row-cols-1 row-cols-md-2 pb-5 row-cols-lg-4 g-4">
+                                    <div class="col">
+                                        <img src="images/MutualFunds.webp" class="img-fluid" alt="Mutual Funds">
+                                        <div class="card-custom">
+                                            <h5>Mutual Funds</h5>
+                                            <p>Diversify Your Investments for Success!</p>
+                                            <p> Build a robust financial portfolio with dynamic mutual funds designed to
+                                                support your educational goals.</p>
+                                            <a href="#">Invest Now <img src="images/arrowjpeg.jpeg" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <img src="images/FixedDeposit.webp" class="img-fluid" alt="Fixed Deposits">
+                                        <div class="card-custom">
+                                            <h5>Fixed Deposits</h5>
+                                            <p>Grow Your Savings Securely! </p>
+                                            <p>Enjoy peace of mind with our tailor-made solutions that guarantee returns
+                                                on your investment.</p>
+                                            <a href="#">Invest Now <img src="images/arrowjpeg.jpeg" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <img src="images/EduLoan.webp" class="img-fluid" alt="Education Loan">
+                                        <div class="card-custom">
+                                            <h5>Education Loan</h5>
+                                            <p>Invest in Knowledge! </p>
+                                            <p> Access world-class education with flexible repayment options that fit
+                                                your future.</p>
+                                            <a href="#">Apply Now <img src="images/arrowjpeg.jpeg" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <img src="images/protection.webp" class="img-fluid"
+                                            alt="Protection - Insurance">
+                                        <div class="card-custom">
+                                            <h5>Protection - Insurance</h5>
+                                            <p>Secure Your Future!</p>
+                                            <p>Protect your educational investments with comprehensive insurance plans.
+                                            </p>
+                                            <a href="#">View Details <img src="images/arrowjpeg.jpeg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Partner Section -->
+        <div class="_partner row px-5 py-5">
+            <div class=" px-5 py-5">
+                <div class="col-6 col-sm-12">
+                    <h5>Our <span style="color: #032b5b;">Partners</span></h5>
+                    <p>Partnering for Excellence: Where aspirations and possibilities unite.</p>
+                </div>
+                <div class="row _prow">
+                    <div class="col-lg-4 col-sm-12 mb-5 px-4 _pborder">
+                        <div class="_pheading">
+                            <h5>Mutual Funds</h5>
+                            <a href="">See More</a>
+                        </div>
+                        <div class="col-12 _pimg">
+                            <img src="images/AXISMUTUALFUND_MF.jpg" alt="">
+                            <img src="images/BAJAJ FINSERV_MF.jpg" alt="">
+                            <img src="images/BANDHANMUTUALFUND_MF.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 mb-5 px-4 _pborder">
+                        <div class="_pheading">
+                            <h5>Education Loans</h5>
+                            <a href="">See More</a>
+                        </div>
+                        <div class="col-12 _pimg">
+                            <img src="images/AXISMUTUALFUND_MF.jpg" alt="">
+                            <img src="images/BAJAJ FINSERV_MF.jpg" alt="">
+                            <img src="images/BANDHANMUTUALFUND_MF.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 mb-5 px-4 _pborder">
+                        <div class="_pheading">
+                            <h5>Education Loans</h5>
+                            <a href="">See More</a>
+                        </div>
+                        <div class="col-12 _pimg">
+                            <img src="images/AXISMUTUALFUND_MF.jpg" alt="">
+                            <img src="images/BAJAJ FINSERV_MF.jpg" alt="">
+                            <img src="images/BANDHANMUTUALFUND_MF.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- Discover Section Inside partner section -->
+            <div class="_discover px-5">
+                <div class="container mt-5">
+                    <div class="row g-4">
+                        <!-- First Card -->
+                        <div class="col-md-6">
+                            <div class="d-flex flex-row-reverse align-items-center career-card background-blue">
+                                <div class="flex-shrink-0">
+                                    <img src="images/CareerLibrary.webp" alt="Career Library">
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold">Discover Your Path with Our <span>Career Library!</span></h5>
+                                    <p class="text-muted">Unlock endless possibilities and find your ideal career with
+                                        our extensive career library & tailored guidance.</p>
+                                    <a href="#" class="btn custom-button">Explore Now <i
+                                            class="fa-solid fa-arrow-right-long"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Second Card -->
+                        <div class="col-md-6">
+                            <div class="d-flex flex-row-reverse align-items-center education-card background-yellow">
+                                <div class="flex-shrink-0">
+                                    <img src="images/StudyAbroad.webp" alt="Educational Journey"
+                                        class="image-container">
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold">Embark On Your Educational Journey <span class="text-primary">
+                                            Abroad with Us!</span></h5>
+                                    <p class="text-muted">Expert guidance for studying abroad, financial and academic
+                                        preparation for a seamless journey overseas.</p>
+                                    <a href="#" class="btn custom-button">Speak to our Experts <i
+                                            class="fa-solid fa-arrow-right-long"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Missions -->
+                    <div class="text-center my-5 mission">
+                        <div class="my-5 ">
+                            <p>Our mission is to make Children's Dreams <img src="images/Cloud.eb908938.svg" alt="">
+                                Cloudcome true by offering specialized educational services supported by tailored
+                                Financial SolutionsCash <img src="images/Cash.5e79b5a6.svg" alt=""> . Join us in
+                                securing a bright future <img src="images/Rocket.7c85dca6.svg" alt=""> for your child
+                                with our comprehensive education planning and Accessible Saving PlansPiggyBank <img
+                                    src="images/PiggyBank.5fa9d214.svg" alt="">.</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="px-5">
+                        <!-- Testimonials Section -->
+                        <div class="row g-3 ">
+                            <!-- Testimonial 1 -->
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="testimonial-card">
+                                    <p class="testimonial-quote">"Invest4edu was a game-changer for my education journey
+                                        abroad! Their seamless support and expert guidance made obtaining a student loan
+                                        so straightforward.."</p>
+                                    <span class="show-more">Show More...</span>
+                                    <div class="testimonial-author">
+                                        <img src="images/default-user.98c518c9.svg" alt="" class="author-img">
+                                        <div class="author-info">
+                                            <span class="author-name">Manas Sudam Patil</span><br>
+                                            <span class="author-title">Student</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial 2 -->
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="testimonial-card">
+                                    <p class="testimonial-quote">"Invest4Edu Private Limited is a lifesaver! Within just
+                                        two
+                                        weeks, they granted me an education loan, making my dream of higher education a
+                                        reality. The entire process was seamless..."</p>
+                                    <span class="show-more">Show More...</span>
+                                    <div class="testimonial-author">
+                                        <img src="images/default-user.98c518c9.svg" alt="" class="author-img">
+                                        <div class="author-info">
+                                            <span class="author-name">Sanjay Sutar</span><br>
+                                            <span class="author-title">Student</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial 3 -->
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="testimonial-card">
+                                    <p class="testimonial-quote">"Invest4Edu Private Limited is a lifesaver! Within just
+                                        two
+                                        weeks, they granted me an education loan, making my dream of higher education a
+                                        reality. The entire process was seamless..."</p>
+                                    <span class="show-more">Show More...</span>
+                                    <div class="testimonial-author">
+                                        <img src="images/default-user.98c518c9.svg" alt="" class="author-img">
+                                        <div class="author-info">
+                                            <span class="author-name">Sanjay Sutar</span><br>
+                                            <span class="author-title">Student</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <!-- Blogs Section -->
+                        <div class="_blogs py-5">
+                            <div>
+                                <h5 style="color: #032b5b;">Latest Blogs</h5>
+                                <p>Find Your Insights & Inspirations</p>
+                            </div>
+
+                            <div class="row g-2">
+                                <div class="col-lg-3 col-md-6 col-sm-12 card border-0">
+                                    <div class="card">
+                                        <img src="images/BlogImage_sw29ie9.jpg" alt="">
+                                        <div class="px-3">
+                                            <h5 class="mb-5">E4ucaton Loan: Top 9 Advantages You Must Know</h5>
+
+                                            <div class="_date mb-4">
+                                                <i class="fa-regular fa-calendar-days"></i>
+                                                <label for="">07-Oct-2024</label>
+                                            </div>
+
+                                            <div class="_readmore">
+                                                <a href="">Read More <i class="fa-solid fa-chevron-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12 card border-0">
+                                    <div class="card">
+                                        <img src="images/BlogImage_koodjkb.jpg" alt="">
+                                        <div class="px-3">
+                                            <h5 class="mb-5">Psychomertic Assessment For Career Guidance</h5>
+
+                                            <div class="_date mb-4">
+                                                <i class="fa-regular fa-calendar-days"></i>
+                                                <label for="">05-Oct-2024</label>
+                                            </div>
+
+                                            <div class="_readmore">
+                                                <a href="">Read More <i class="fa-solid fa-chevron-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12 card border-0">
+                                    <div class="card">
+                                        <img src="images/BlogImage_buutr1d.jpg" alt="">
+                                        <div class="px-3">
+                                            <h5 class="mb-5">Elevate Intership Progam: A Path TO Finance Success</h5>
+
+                                            <div class="_date mb-4">
+                                                <i class="fa-regular fa-calendar-days"></i>
+                                                <label for="">03-Oct-2024</label>
+                                            </div>
+
+                                            <div class="_readmore">
+                                                <a href="">Read More <i class="fa-solid fa-chevron-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12 card border-0">
+                                    <div class="card">
+                                        <img src="images/BlogImage_ykuna4f.jpg" alt="">
+                                        <div class="px-3">
+                                            <h5 class="mb-4">Unlock Your dream Carrer With invest4edu's Carrer Library
+                                            </h5>
+
+                                            <div class="_date mb-3">
+                                                <i class="fa-regular fa-calendar-days"></i>
+                                                <label for="">01-Oct-2024</label>
+                                            </div>
+
+                                            <div class="_readmore">
+                                                <a href="">Read More <i class="fa-solid fa-chevron-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Media Section -->
+                    <div>
+                        <h4>In Media</h4>
+                        <div class="container ">
+                            <div class="_logos col-lg-12 col-md-12 col-sm-12">
+                                <div class="_logos-section">
+                                    <img id="img1" src="images/businessconnect.svg" alt="">
+                                    <img id="img2" src="images/engish-jagran.svg" alt="">
+                                    <img id="img3" src="images/entracker.svg" alt="">
+                                    <img id="img4" src="images/etnow.svg" alt="">
+                                    <img id="img5" src="images/ettech.svg" alt="">
+                                    <img id="img6" src="images/feleisure.svg" alt="">
+                                    <img id="img7" src="images/fexpress.svg" alt="">
+                                    <img id="img8" src="images/india.svg" alt="">
+                                    <img id="img9" src="images/moneycontrol.svg" alt="">
+                                    <img id="img10" src="images/ndtv-profit.svg" alt="">
+                                    <img id="img11" src="images/bt.svg" alt="">
+                                </div>
+                                <div class="_logos-section">
+                                    <img src="images/businessconnect.svg" alt="">
+                                    <img src="images/engish-jagran.svg" alt="">
+                                    <img src="images/entracker.svg" alt="">
+                                    <img src="images/etnow.svg" alt="">
+                                    <img src="images/ettech.svg" alt="">
+                                    <img src="images/feleisure.svg" alt="">
+                                    <img src="images/fexpress.svg" alt="">
+                                    <img src="images/india.svg" alt="">
+                                    <img src="images/moneycontrol.svg" alt="">
+                                    <img src="images/ndtv-profit.svg" alt="">
+                                    <img src="images/bt.svg" alt="">
+                                </div>
+                                <div class="_dots">
+                                    <a href="#img1"></a>
+                                    <a href="#img2"></a>
+                                    <a href="#img3"></a>
+                                    <a href="#img4"></a>
+                                    <a href="#img5"></a>
+                                    <a href="#img6"></a>
+                                    <a href="#img7"></a>
+                                    <a href="#img8"></a>
+                                    <a href="#img9"></a>
+                                    <a href="#img10"></a>
+                                    <a href="#img11"></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer _foot">
+        <div class="container-fluid px-5 _bottom">
+            <div class="row justify-content-start pt-4">
+                <!-- Column 1 -->
+                <div class="col-sm-12 col-md-4 col-lg-3">
+                    <h5><img src="https://i4edevcdn-ccejewcbdqauasgd.z01.azurefd.net/i4e-webiste-images/footer_images/invest4Edu.svg"
+                            class="img-fluid" height="" alt=""></h5>
+                    <ul class="list-unstyled">
+                        <p>Our mission is to empower every individual to plan the future they deserve. We are offering
+                            India's first digital platform catering to education planning for every Indian</p>
+
+                        <div class="__img">
+                            <span>Follow us on: </span>
+                            <div>
+                                <img src="images/facebook.png" alt="">
+                                <img src="images/twitter.png" alt="">
+                                <img src="images/instagram.png" alt="">
+                                <img src="images/linkedin.png" alt="">
+                                <img src="images/youtube.png" alt="">
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-sm-12 col-md-4 col-lg-2 _foot_disappear">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">Press Release</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="col-sm-12 col-md-4 col-lg-2 _foot_disappear">
+                    <h5>Educational Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Education Journey</a></li>
+                        <li><a href="#">Study in Australia</a></li>
+                        <li><a href="#">Study in UK</a></li>
+                        <li><a href="#">Study in USA</a></li>
+                        <li><a href="#">Study in Canada</a></li>
+                        <li><a href="#">Study in India</a></li>
+                        <li><a href="#">Career Library</a></li>
+                        <li><a href="#">Career Counselling</a></li>
+                        <li><a href="#">Psychometric Test</a></li>
+                        <li><a href="#">Bootcamp</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4 -->
+                <div class="col-sm-12 col-md-4 col-lg-2 _foot_disappear">
+                    <h5>Financial Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Portfolio Analyzer</a></li>
+                        <li><a href="#">Cost calculator</a></li>
+                        <li><a href="#">Education Loan</a></li>
+                        <li><a href="#">Mutual Funds</a></li>
+                        <li><a href="#">Fixed Deposit</a></li>
+                        <li><a href="#">Protection</a></li>
+                        <li><a href="#">Calculators</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 5 -->
+                <div class="col-sm-12 col-md-4 col-lg-2 ">
+                    <h5>Reach Us at</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Call: +91 85918 58565</a></li>
+                        <li><a href="#">Email:</a></li>
+                        <li><a href="#">info@invest4edu.com</a></li>
+                        <p style="word-wrap: normal;">Address: 308, A Wing, Gokul Arcade, Near Garware House
+                            Sahar Road, Ville Parle (E) Mumbai - 400057</p>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row _description">
+                <h4>DISCLAIMER</h4>
+                <p>This website is owned, operated and maintained by invest4Edu Private Limited, a company incorporated
+                    under the laws of India. The platform and the services thereunder are provided on an "as is" basis.
+                    Use of the service and the platform is at your own risk. Company makes no warranty that the use of
+                    the service and the platform will be continuous, uninterrupted, bug-free, error-free, virus-free,
+                    free of defects, free of technical problems, nor that it will meet all of your needs. To the extent
+                    permitted by applicable law, Company expressly disclaims all other warranties, conditions, results,
+                    guarantees, or representations with respect to the service and the platform, whether express or
+                    implied, including, but not limited to, the implied warranties of merchantability, merchantable or
+                    satisfactory quality, fitness for a particular purpose, non-infringement of third party rights, or
+                    arising from the course of performance, course of dealing, or usage of trade. Investment in
+                    securities market are subject to market risks, read all the related documents carefully before
+                    investing. The valuation of securities may increase or decrease depending on the factors affecting
+                    the securities market.</p>
+                <p class="_par">RESEARCH ANALYST - INH000010113 | ARN - 190026 | CIN - U93000MH2021PTC366886 | GST No -
+                    27AAGCI2917P1Z3 invest4edu pvt ltd is AMFI registered Mutual Fund distributor.</p>
+            </div>
+        </div>
+        <div class="container-fluid px-5 row _last_foot py-2">
+            <div class="col-sm-12 col-md-6 col-lg-6 text-center">
+                Copyright © 2024. invest4Edu Pvt Ltd.
+            </div>
+            <div class="_last col-sm-12 col-md-6 mx-auto  col-lg-6">
+                <a href="">Terms of use</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Refund Policy</a>
+                <a href="">Disclamer</a>
+                <a href="" id="last">Sitemap</a>
+            </div>
+        </div>
+    </footer>
+
 </body>
+
 </html>

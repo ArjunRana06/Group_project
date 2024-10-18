@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+._main{
+    margin-top: 75px;
+    height: fit-content;
+}
+
+._m_main{
+    height: fit-content;
+    background-image: url(../images/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+._m_main ._first_main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+._m_main ._first_main ._bot img{
+    background-color: #c1e9ff;
+    border-radius: 20px;
+}
+
+._m_main ._first_main ._bot span{
+    background-color: #ffffff;
+    color: #000;
+    padding: 4px 15px;
+    margin-left: -6px;
+    border-radius: 0 40px 40px 0;
+}
+
+._m_main ._first_main ._education{
+    font-size: 45px;
+}
+
+._m_main ._first_main  button{
+    padding: 12px 20px;
+    background-color: #0ca5ff;
+    font-weight: 500;
+}
+
+._m_main ._first_main ._need{
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+._student{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+/* Second Main */
+._second_main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+._contain{
+    background-image: url('../images/hero-girl.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 400px;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+._absolute{
+    position: relative;
+    width: 85%;
+}
+
+._absolute div{
+    margin: 25px 0;
+}
+
+._absolute a:hover{
+    animation: 2.25s bounce linear;
+}
+
+@keyframes bounce {
+    0%, 20%, 40%, 60%, 80%, 100%{
+        transform: translateY(0);
+    }
+    10%{
+        transform: translateY(-16px);
+    }
+    30%{
+        transform: translateY(-16px);
+    }
+    50%{
+        transform: translateY(-16px);
+    }
+    70%{
+        transform: translateY(-16px);
+    }
+    90%{
+        transform: translateY(-16px);
+    }
+}
+
+
+._second_main .btn{
+    padding: 10px 0;
+    width: 150px;
+    background-color: #fff;
+    font-size: 14px;
+}
+._second_main .btn:hover{
+    color: #0c0c0c;
+}
+._second_main .btn img{
+    height: 22px;
+}
+
+
+#_hero_btn1{
+    display: flex;
+    justify-content: center;
+}
+
+#_hero_btn2{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#_hero_btn3{
+    margin-top: -20px;
+}
+
+#_hero_btn4{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: -30px;
+    margin-top: -20px;
+}
+
+
+#_hero_btn5{
+    display: flex;
+    margin-left: -10px;
+}
+
+#_hero_btn6{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+
+
+
+/* The second main */
+._age_section{
+    background-color: #ffffff;
+}
+._age_section .container{
+    padding-top: 50px;
+}
+._age_section div img{
+    height: 90px;
+    width: 14.28%;
+    cursor: pointer;
+}
+._age_section div ._boy:hover{
+    filter: drop-shadow(0 20px 10px #4eaaec);
+    transition: .25s ease-out;
+    margin-top: -10px;
+}
+
+@media(max-width: 768px){
+    ._age_section div img{
+        display: none;
+    }
+}
+
+
+._progress:hover{
+    margin-top: -5px;
+    filter: drop-shadow(0 5px 5px #4eaaec);
+}
+
+._start_btn{
+    padding-top: 20px;
+    text-align: center;
+}
+._start_btn button{
+    padding: 12px 32px;
+    font-weight: 500;
+    background-color: #0da2fa;
+}
+
+._start_btn button:hover{
+    background-color: #0da2fa;
+}
+
+
+
+
+/* Third Section */
+
+._fammily{
+    background-color: #f1f5fb;  
+}
+
+
+
+._fammily ._fimage{
+    height: 200px;
+}
+
+._family_right{
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* Financial Section */
+._financial{
+    height: fit-content;
+    background-color: #ecf8ff;
+}
+
+._financial ._finance{
+    display: flex;
+    align-items: center;
+}
+
+._services{
+    font-size: 28px;
+}
+
+
+._financial ._finance .fa-arrow-right-long{
+    transform: rotate(200deg);
+}
+
+.card-custom {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.col{
+}
+
+.card-custom h5 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #003d85;
+}
+
+.card-custom p {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.card-custom a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    text-decoration: none;
+    color: #0069d9;
+    /* background-color: red; */
+    bottom: 0;
+}
+
+.card-custom a img{
+    height: 20px;
+}
+
+.card-custom:hover {
+    transform: translateY(-5px); /* Adds a subtle lift effect on hover */
+}
+
+.container-custom {
+    padding: 40px 0;
+}
+
+
+/* The Partner Section */
+._pheading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+._prow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+._pborder{
+    border-right: 1px solid #000;
+}
+
+._pborder a{
+    text-decoration: none;
+    color: #000;
+}
+
+._pborder a:hover{
+    text-decoration: underline;
+}
+._pimg{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+._pimg img{
+    height: 50px;
+}
+
+
+
+/* Discover section */
+.career-card, .education-card {
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.background-blue {
+    background-color: #e8f3ff; /* Light blue background */
+}
+
+.background-yellow {
+    background-color: #fff5e5; /* Light yellow background */
+}
+
+.image-container {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.custom-button {
+    font-weight: 500;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.custom-button:hover {
+    color: #fff;
+    background-color: #0056b3;
+}
+
+.flex-shrink-0 img{
+    height: 250px;
+    width: auto;
+}
+
+._discover h5{
+    line-height: 35px;
+}
+
+._discover h5 span{
+    color: #032b5b;
+}
+
+._discover .flex-row-reverse{
+    box-shadow: 0 0 10px #658fa0;
+}
+
+
+
+/* Mission Section */
+.mission p{
+    font-size: 24px;
+    line-height: 50px;
+}
+
+.mission p img{
+    height: 50px;
+}
+
+
+
+
+/* Testimonial Section */
+.testimonial-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.testimonial-quote {
+    font-size: 1rem;
+    color: #333;
+}
+
+.show-more {
+    color: #318cc9;
+    float: right;
+    margin-top: -28px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.author-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.author-info {
+    font-size: 0.9rem;
+}
+
+.author-name {
+    font-weight: bold;
+    color: #333;
+}
+
+.author-title {
+    font-size: 0.85rem;
+    color: #777;
+}
+
+
+
+
+/* Blogs sections */
+.card{
+    height: fit-content;
+    padding-bottom: 12px;
+}
+
+
+.card h5{
+    font-size: 16px;
+    color: #325989;
+}
+
+._date{
+    font-size: 14px;
+    color: #b9b9b9;
+    font-weight: 500;
+}
+
+._readmore{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+._readmore i{
+    font-size: 10px;
+}
+
+._readmore a{
+    text-decoration: none;
+}
+
+
+
+
+
+/* Media Section */
+
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+._logos{
+    overflow: hidden;
+    padding: 20px 0;
+    white-space: nowrap;
+}
+
+._logos:hover ._logos-section{
+    animation-play-state: paused;
+}
+
+._logos-section{
+    display: inline-block;
+    animation: 60s slide infinite linear;
+    margin-bottom: 30px;
+}
+
+._logos-section img{
+    height: 70px;
+    margin: 0 5px;
+}
+
+._logos-section img:hover{
+    transform: scale(1.1);
+    transition:  .75s ease;
+}
+
+._dots{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 35%;
+}
+
+._dots a{
+    height: 5px ;
+    width: 5px;
+    background-color: #d3d3d3;
+    border-radius: 50%;
+}
