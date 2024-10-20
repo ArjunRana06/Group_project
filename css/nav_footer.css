@@ -150,6 +150,47 @@ body{
     }
 }
 
+
+
+
+/* The study Abroad Section */
+ /* Show the dropdown submenu on hover */
+ ._study_abroad{
+    display: none;
+ }
+
+ .dropdown-menu li:hover ._study_abroad{
+    border-radius: 6px;
+    padding: 5px;
+    width: 150px;
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: 160px;
+    background-color: #ffffff;
+ }
+
+ ._study_abroad ul li{
+    margin-left: -16px;
+    list-style-type: none;
+ }
+
+ ._study_abroad ul li a{
+    text-decoration: none;
+    color: #74808d;
+ }
+
+ ._study_abroad ul li:hover{
+    background-color: #f1ebeb;
+ }
+
+
+
+
+
+
+ /* The footer section */
+
 .footer{
     color: #fff;
     font-size: 14px;

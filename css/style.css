@@ -208,15 +208,18 @@
 
 
 /* Third Section */
+/* The Family Section */
 
 ._fammily{
-    background-color: #f1f5fb;  
+    padding: 40px 0;
+    background-color: #f2f5fb;  
+    /* background-color: royalblue; */
 }
 
 
 
 ._fammily ._fimage{
-    height: 200px;
+    height: 600px;
 }
 
 ._family_right{
@@ -224,6 +227,98 @@
     align-items: center;
 }
 
+._family{
+    height: 40vh;
+    width: 100%;
+    background-image: url(../images/family.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+._family div{
+    /* background-color: #003d85; */
+}
+._family div a{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+
+
+
+._family img{
+    height: 28px;
+}
+
+._family_btn1{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+._family_btn2{
+    text-align: left;
+    margin-top: -20px;
+    margin-left: 12px;
+}
+
+._family_btn3{
+    text-align: left;
+    margin-top: -10px;
+    margin-left: 350px;
+}
+
+._family_btn4{
+    text-align: left;
+    margin: 8px 0;
+    margin-top: -10px;
+}
+
+._family_btn5{
+    text-align: left;
+    margin-left: 10px;
+    
+}
+
+._family_btn6{
+    text-align: left;
+    margin-left: 65%;
+    margin-top: -36px;
+}
+
+._family a{
+    font-size: 12px;
+}
+
+
+._family a:hover{
+    background: #fff;
+    animation: 2.25s bounce2 linear;
+}
+
+@keyframes bounce2 {
+    0%, 20%, 40%, 60%, 80%, 100% {
+        transform: translateY(0);
+    }
+    10%{
+        transform: translateY(-15px);
+    }
+    30%{
+        transform: translateY(-15px);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    70%{
+        transform: translateY(-15px);
+    }
+    90%{
+        transform: translateY(-15px);
+    }
+    
+}
 
 
 /* Financial Section */
@@ -324,6 +419,15 @@
 }
 ._pimg img{
     height: 50px;
+}
+
+._pimgg{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+._pimgg img{
+    height: 20px;
 }
 
 
