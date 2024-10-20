@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #4A90E2;
+}
+
+.container {
+    text-align: center;
+    padding: 80px;
+    color: white;
+}
+
+.heading {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.subheading {
+    font-size: 24px;
+}
+
+.illustrations {
+    position: relative;
+    margin-top: 20px;
+}
+
+.illustrations img {
+    max-width: 100px;
+    position: absolute;
+}
+
+.illustration-pig {
+    left: 30%;
+    top: 10%;
+}
+
+.illustration-books {
+    left: 50%;
+    top: 10%;
+}
+
+.illustration-plane {
+    right: 10%;
+    top: 10%;
+}

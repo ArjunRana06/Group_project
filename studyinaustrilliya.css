@@ -1,0 +1,85 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .background-section {
+    background-image: url('./my_images/AUS.webp'); /* Replace with actual image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content-wrapper {
+   
+    border-radius: 15px;
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    padding: 30px;
+  }
+
+  .left-content {
+    flex: 1;
+    color: #fff;
+    padding-right: 30px;
+  }
+
+  .left-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  .left-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  .icon-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .icon-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .icon-list i {
+    color: #ffcc00;
+    margin-right: 10px;
+  }
+
+  .right-content {
+    flex: 1;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .form-control, .form-select {
+    margin-bottom: 15px;
+  }
+
+  .form-check-label {
+    margin-bottom: 10px;
+  }
+
+  .submit-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }

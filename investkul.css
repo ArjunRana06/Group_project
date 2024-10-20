@@ -172,3 +172,64 @@
 .row {
     display: flex;
 }
+
+
+/* modal */
+ 
+   
+
+  .modal-dialog {
+    max-width: 70%;  /* 80% width */
+    max-height: 100%; /* 80% height */
+    margin-top: 10%;
+}
+
+.modal-content {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    height: 100%; /* Set height to 100% to fill the dialog */
+}
+
+/* Left Section with Gradient Background */
+.modal-left {
+    background: linear-gradient(to bottom right, #c0e0ff, #6a8eff);
+    color: white;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+.modal-left blockquote {
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.modal-left footer {
+    font-size: 1rem;
+}
+
+/* Right Section with Form */
+.modal-right {
+    padding: 40px;
+    width: 50%;
+    background-color: white;
+}
+
+
+
+/* Form Customization */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: #5f6dff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #4c57e4;
+}
