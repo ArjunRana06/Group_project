@@ -23,6 +23,7 @@
 
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/nav_footer.css">
     <script src="script.js"></script>
 
@@ -155,16 +156,43 @@
                         <!-- Login Popup -->
                         <div class="popup-container" id="popup">
                             <span class="close-btn" onclick="closePopup()">×</span>
-                            <h2>Sign In</h2>
-                            <div class="_input-box">
-                                <input type="email" placeholder="E-mail">
+                            <div class="form-containerr">
+                                <div class="form-box">
+                                    <h1 id="title">Sign Up</h1>
+                                    <form id="userForm">
+                                        <div class="input-group">
+                                            <div class="input-field" id="nameField">
+                                                <i class="fa-solid fa-user"></i>
+                                                <input type="text" id="username" placeholder="Username">
+                                            </div>
+                                            <small class="error-message" id="usernameError"></small>
+
+                                            <div class="input-field">
+                                                <i class="fa-solid fa-envelope"></i>
+                                                <input type="email" id="email" placeholder="Email">
+                                            </div>
+                                            <small class="error-message" id="emailError"></small>
+
+                                            <div class="input-field">
+                                                <i class="fa-solid fa-lock"></i>
+                                                <input type="password" id="password" placeholder="Password">
+                                            </div>
+                                            <small class="error-message" id="passwordError"></small>
+
+                                            <p>Forgot Password? <a href="">Click Here!</a></p>
+                                        </div>
+
+                                        <div class="btn-field">
+                                            <button type="button" id="signupBtn">Sign Up</button>
+                                            <button type="button" class="disable" id="signinBtn">Sign In</button>
+                                        </div>
+                                    </form>
+
+                                </div>
                             </div>
-                            <div class="_input-box">
-                                <input type="password" placeholder="Password">
-                            </div>
-                            <button class="Lbtn">Login</button>
                         </div>
-                        <button class="btn mx-1 _partner_btn">Partner Login <i class="fa-solid fa-arrow-right"></i>
+
+                        <button class="btn mx-1 _partner_btn">partner<i class="fa-solid fa-arrow-right"></i>
                         </button>
 
                     </div>
@@ -826,6 +854,69 @@
         </div>
     </footer>
 
+    <!-- THE CODE FOR THE FORM SIGN IN SIGN UP PAGE TRANSITION -->
+    <script>
+        let signinBtn = document.getElementById("signinBtn");
+        let signupBtn = document.getElementById("signupBtn");
+        let nameField = document.getElementById("nameField");
+        let title = document.getElementById("title");
+
+        signinBtn.onclick = function () {
+            nameField.style.maxHeight = "0";
+            title.innerHTML = "Sign In";
+            signupBtn.classList.add("disable");
+            signinBtn.classList.remove("disable");
+        };
+        signupBtn.onclick = function () {
+            nameField.style.maxHeight = "60px";
+            title.innerHTML = "Sign Up";
+            signupBtn.classList.remove("disable");
+            signinBtn.classList.add("disable");
+        };
+    </script>
+    <script>
+        // Get references to input fields and error message elements
+        const username = document.getElementById("username");
+        const email = document.getElementById("email");
+        const password = document.getElementById("password");
+
+        const usernameError = document.getElementById("usernameError");
+        const emailError = document.getElementById("emailError");
+        const passwordError = document.getElementById("passwordError");
+
+        // Add input event listeners to validate in real-time
+        username.addEventListener("input", () => {
+            if (username.value.trim() === "") {
+                usernameError.textContent = "Username cannot be empty.";
+            } else if (username.value.length < 5) {
+                usernameError.textContent = "Username must be at least 5 characters.";
+            } else {
+                usernameError.textContent = ""; // Clear error message
+            }
+        });
+
+        email.addEventListener("input", () => {
+            const emailRegExp = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (email.value.trim() === "") {
+                emailError.textContent = "Email cannot be empty.";
+            } else if (!emailRegExp.test(email.value)) {
+                emailError.textContent = "Please enter a valid email address.";
+            } else {
+                emailError.textContent = ""; // Clear error message
+            }
+        });
+
+        password.addEventListener("input", () => {
+            if (password.value.trim() === "") {
+                passwordError.textContent = "Password cannot be empty.";
+            } else if (password.value.length < 6) {
+                passwordError.textContent = "Password must be at least 6 characters.";
+            } else {
+                passwordError.textContent = ""; // Clear error message
+            }
+        });
+
+    </script>
 </body>
 
 </html>

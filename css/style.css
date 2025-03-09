@@ -13,86 +13,7 @@
 }
 
 
-/* LOGIN BUTTON */
-/* Overlay (Background when popup appears) */
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: none;
-    z-index: 9;
-}
 
-/* Popup Container */
-.popup-container {
-    position: fixed;
-    top: -100%; /* Initially hidden */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 400px;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    transition: 0.5s ease-in-out;
-    z-index: 10;
-}
-
-/* Active Class (For Smooth Animation) */
-.popup-container.active {
-    top: 30%;
-}
-
-/* Close Button */
-.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 20px;
-    cursor: pointer;
-    color: #6a11cb;
-}
-
-.popup-container h2 {
-    font-size: 22px;
-    margin-bottom: 10px;
-}
-
-._input-box {
-    position: relative;
-    margin: 15px 0;
-    width: 100%;
-} 
-
-._input-box input {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-    outline: none;
-}
-
-.Lbtn {
-    width: 100%;
-    padding: 12px;
-    background: linear-gradient(90deg, #6a11cb, #2575fc);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s; 
-    margin-top: 10px;
-}
-
-.Lbtn:hover {
-    opacity: 0.8;
-}
 
 
 
@@ -340,9 +261,6 @@
     background-repeat: no-repeat;
 }
 
-._family div{
-    /* background-color: #003d85; */
-}
 ._family div a{
     width: fit-content;
     display: flex;
@@ -454,8 +372,6 @@
     transition: transform 0.3s;
 }
 
-.col{
-}
 
 .card-custom h5 {
     font-size: 22px;
